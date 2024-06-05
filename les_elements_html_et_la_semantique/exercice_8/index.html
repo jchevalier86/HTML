@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire</title>
+  <meta name="description" content="correction de l'exercice sur les formulaire">
+</head>
+
+<body>
+  <form action="" method="post" enctype="multipart/form-data">
+    <h2>Questionnaire Personnel</h2>
+
+    <label for="nom">Nom* :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <br><br>
+
+    <label for="prenom">Prénom* :</label>
+    <input type="text" id="prenom" name="prenom" required>
+
+    <br><br>
+
+    <label for="password">Mot de passe* :</label>
+    <input type="password" id="password" name="password" required>
+
+    <br><br>
+
+    <label for="email">Email* :</label>
+    <input type="email" id="email" name="email" required>
+
+    <br><br>
+
+    <label for="tel">Téléphone :</label>
+    <input type="tel" id="tel" name="tel">
+
+    <br><br>
+
+    <label for="birthdate">Date de naissance* :</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <br><br>
+
+    <label for="favcolor">Couleur préférée :</label>
+    <input type="color" id="favcolor" name="favcolor">
+
+    <br><br>
+
+    <label for="status">Statut :</label>
+    <select id="status" name="status">
+      <option value="etudiant">Étudiant</option>
+      <option value="professionnel">Professionnel</option>
+      <option value="autre">Autre</option>
+    </select>
+
+    <br><br>
+
+    <label for="children">Enfants à charge :</label>
+    <input type="number" id="children" name="children" min="0" max="100" value="0">
+
+    <br><br>
+
+    <fieldset>
+      <legend>Genre</legend>
+      <label>
+        <input type="radio" name="genre" value="homme" checked>Homme</label>
+      
+      <label><input type="radio" name="genre" value="femme"> Femme</label>
+      <label><input type="radio" name="genre" value="autre"> Autre</label>
+    </fieldset>
+
+    <br><br>
+
+    <label><input type="checkbox" name="passion" value="formulaires"> Je suis passionné(e) par les formulaires</label>
+
+    <br><br>
+
+    <fieldset>
+      <legend>Compétences</legend>
+      <label><input type="checkbox" name="competences" value="html"> HTML</label>
+      <label><input type="checkbox" name="competences" value="css"> CSS</label>
+      <label><input type="checkbox" name="competences" value="js"> JavaScript</label>
+    </fieldset>
+
+    <br><br>
+
+    <label for="cv">CV :</label>
+    <input type="file" id="cv" name="cv">
+
+    <br><br>
+
+    <label for="comment">Commentaire :</label><br>
+    <textarea id="comment" name="comment" placeholder="Votre commentaire ici..."></textarea>
+
+    <br><br>
+
+    <label for="pays">Pays préféré :</label>
+    <input list="pays-liste" id="pays" name="pays">
+    <datalist id="pays-liste">
+      <option value="France"></option>
+      <option value="Espagne"></option>
+      <option value="Italie"></option>
+      <option value="États-Unis"></option>
+      <option value="Canada"></option>
+      <option value="Japon"></option>
+      <option value="Australie"></option>
+      <option value="Allemagne"></option>
+      <option value="Royaume-Uni"></option>
+      <option value="Brésil"></option>
+    </datalist>
+
+    <br><br>
+
+    <label for="website">Site web personnel :</label>
+    <input type="url" id="website" name="website">
+
+    <br><br>
+
+    <label for="satisfaction">Niveau de satisfaction (0 à 10) :</label>
+    <input type="range" id="satisfaction" name="satisfaction" step="5" min="0" max="10" value="0">
+
+    <br><br>
+
+    <!-- <input type="reset" value="Réinitialiser"> -->
+    <button type="reset">Reset</button>
+
+
+    <!-- <input type="submit" value="Soumettre"> -->
+    <button type="submit">Soumettre</button>
+  </form>
+</body>
+
+</html>
+    
